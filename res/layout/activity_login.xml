@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.suogao.suogao_android.view.HeadView
+        android:id="@+id/headView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/user_name_layout"
+        style="@style/font_detail_user_informationg_layout" >
+
+        <TextView
+            style="@style/font_detail_user_informationg_left_text_13"
+            android:text="@string/login_user_name" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/font_detail_user_informationg_right_text_14"
+            android:hint="@string/login_input_user_name"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/password_layout"
+        style="@style/font_detail_user_informationg_layout" >
+
+        <TextView
+            style="@style/font_detail_user_informationg_left_text_13"
+            android:text="@string/login_pass_word" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/font_detail_user_informationg_right_text_14"
+            android:hint="@string/login_input_pass_word"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/login_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@color/user_information_input_bg"
+                android:gravity="center"
+                android:text="@string/register_text"
+                android:textColor="@color/head_view_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/head_view_color"
+                android:gravity="center"
+                android:text="@string/login_text"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/icon_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/forget_password"
+                android:textColor="@color/head_view_color"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_time_tree">时间轴</string>
+    <!-- 用户信息 -->
+    <string name="use_information_name">姓名</string>
+    <string name="use_information_hint_name">请输入用户姓名</string>
+    <string name="use_information_phone">联系电话</string>
+    <string name="use_information_hint_phone">请输入联系电话</string>
+    <string name="use_information_address">居住地址</string>
+    <string name="use_information_hint_address">请输入居住地址</string>
+    <string name="use_information_usenum">身份证号</string>
+    <string name="use_information_hint_usenum">请输入身份证号</string>
+    <string name="use_information_user_photo">证件正反面照片</string>
+
+    <!-- 忘记密码？ -->
+    <string name="forget_password">忘记密码？</string>
+    <string name="login_user_name">用户名</string>
+    <string name="login_pass_word">密码</string>
+    <string name="login_input_user_name">请输入用户名</string>
+    <string name="login_input_pass_word">请输入密码</string>
+    <string name="login_or">或</string>
+    <string name="login_email">邮箱</string>
+    <string name="login_input_mail">请输入邮箱</string>
+    <string name="login_phone">手机号</string>
+    <string name="login_input_phone">请输入手机号</string>
+    <string name="login_user_name_null">未填写用户名</string>
+    <string name="login_password_null">未填写密码</string>
+    <!-- 注册 -->
+    <string name="register_name">昵称</string>
+    <string name="register_sex">性别</string>
+    <string name="register_user_name">用户名</string>
+    <string name="register_mail">邮箱</string>
+    <string name="register_password">密码</string>
+    <string name="register_t_password">确认密码</string>
+    <string name="register_work_address">工作/居住</string>
+    <string name="register_home_address">居住小区</string>
+    <string name="register_life">生活圈</string>
+    <string name="register_input_name">请输入昵称</string>
+    <string name="register_input_sex">请输入性别</string>
+    <string name="register_input_user_name">请输入用户名</string>
+    <string name="register_input_password">请输入密码</string>
+    <string name="register_t_input_password">请确认输入密码</string>
+    <string name="register_input_mail">请输入邮箱</string>
+    <string name="register_input_work_address">请输入工作/居住地址</string>
+    <string name="register_input_home_address">请输入居住小区</string>
+    <string name="register_input_life">点击地图画圈</string>
+    <string name="register_text">注册</string>
+    <string name="login_text">登录</string>
+    <string name="find_password_text">修改密码</string>
+    <string name="forget_password_text">找回密码</string>
+    <string name="register_name_null">未填写昵称</string>
+    <string name="register_sex_null">未选择性别</string>
+    <string name="register_user_name_null">未填写用户名</string>
+    <string name="register_check_null">未同意使用协议</string>
+    <string name="register_mail_null">未填写邮箱</string>
+    <string name="register_password_null">未填写密码</string>
+    <string name="register_work_address_null">未填写工作/居住</string>
+    <string name="register_home_address_null">未选择居住小区</string>
+    <string name="register_life_null">未添加生活圈</string>
+    <string name="register_mail_phone_null">手机号和邮箱至少填写一个</string>
+    <string name="alet_text_login">登录成功</string>
+    <string name="alet_text_register">注册成功</string>
+    <string name="alet_text_forgetpassword">信息已提交</string>
+    <string name="alet_text_password_error">密码必须为6～12位有效字符</string>
+    <string name="alet_text_mail_error">邮箱格式错误</string>
+
+    <!-- 修改密码 -->
+    <string name="find_password_old_text">原始密码</string>
+    <string name="find_password_new_text">新密码</string>
+    <string name="find_password_new1_text">确认密码</string>
+    <string name="find_password_old_hint_text">请输入原始密码</string>
+    <string name="find_password_new_hint_text">请输入新密码</string>
+    <string name="find_password_new1_hint_text">请重复新密码</string>
+    <string name="find_password_old_null_text">原始密码不能为空</string>
+    <string name="find_password_new_null_text">新密码不能为空</string>
+    <string name="find_password_new1_null_text">重复新密码不能为空</string>
+    <string name="find_password_yes_text">确认</string>
+    <string name="find_password_no_text">取消</string>
+    <string name="find_password_error_text">两次密码输入不一致</string>
+    <string name="agreement_text">双井百事通用户注册协议</string>
+    <string name="update_not_wifi_notice">注意：非wifi下下载安装包会产生流量。</string>
+    <!-- 加载框 -->
+    <string name="load_data_warn_str">数据加载中\u2026</string>
+
+</resources>

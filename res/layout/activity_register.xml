@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/index_fragment_bg"
+    android:orientation="vertical" >
+
+    <com.suogao.suogao_android.view.HeadView
+        android:id="@+id/headView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/mail_layout"
+                style="@style/font_detail_user_informationg_layout" >
+
+                <TextView
+                    style="@style/font_detail_user_informationg_left_text_13"
+                    android:text="@string/login_user_name" />
+
+                <EditText
+                    android:id="@+id/mail"
+                    style="@style/font_detail_user_informationg_right_text_14"
+                    android:hint="@string/register_input_mail"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/password_layout"
+                style="@style/font_detail_user_informationg_layout" >
+
+                <TextView
+                    style="@style/font_detail_user_informationg_left_text_13"
+                    android:text="@string/register_password" />
+
+                <EditText
+                    android:id="@+id/password"
+                    style="@style/font_detail_user_informationg_right_text_14"
+                    android:hint="@string/register_input_password"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/t_password_layout"
+                style="@style/font_detail_user_informationg_layout" >
+
+                <TextView
+                    style="@style/font_detail_user_informationg_left_text_13"
+                    android:text="@string/register_t_password" />
+
+                <EditText
+                    android:id="@+id/t_password"
+                    style="@style/font_detail_user_informationg_right_text_14"
+                    android:hint="@string/register_t_input_password"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_name_layout"
+                style="@style/font_detail_user_informationg_layout" >
+
+                <TextView
+                    style="@style/font_detail_user_informationg_left_text_13"
+                    android:text="@string/login_user_name" />
+
+                <EditText
+                    android:id="@+id/username"
+                    style="@style/font_detail_user_informationg_right_text_14"
+                    android:hint="@string/login_input_user_name"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:paddingRight="10dp" >
+
+                <CheckBox
+                    android:id="@+id/check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/check_box_select"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:id="@+id/todo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我同意剧本系统服务协议"
+                    android:textColor="@color/head_view_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/head_view_color"
+                android:gravity="center"
+                android:text="@string/register_text"
+                android:textColor="@color/white"
+                android:textSize="18sp" 
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
