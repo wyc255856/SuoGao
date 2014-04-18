@@ -16,7 +16,9 @@
     <color name="index_right_menu_back3">#2d9679</color>
     <color name="index_right_menu_back5">#d06f33</color>
      <color name="index_fragment_bg">#FFFFFF</color>
-    <color name="head_view_color">#ff33aa88</color>
+    <color name="head_view_color">#ff4B4B4B</color>
+    <color name="head_view_color_preesed">#ff808080</color>
+     <!--  <color name="head_view_color">#ff33aa88</color> -->
 
     <color name="black">#000000</color>
     <!-- 用户信息填写背景颜色和分割线字体颜色 -->
@@ -29,6 +31,8 @@
     <color name="time_tree_title">#69cc11</color>
      <color name="time_tree_bg">#3a3c49</color>
 
-  
+  <color name="main_titel">#6e6e6e</color>
+  <color name="main_text">#aeaeae</color>
+   <color name="main_line">#e6e6e6</color>
 
 </resources>

@@ -1,21 +1,16 @@
 package com.suogao.suogaoapp;
 
-import com.suogao.suogao_android.adapter.TimeTreeAdapter;
-import com.suogao.suogao_android.helper.MenuHelper;
+import android.content.Intent;
+import android.view.View;
 
-import android.os.Bundle;
+import com.suogao.suogao_android.adapter.HomeListAdapter;
+import com.suogao.suogao_android.helper.MenuHelper;
+import com.suogao.suogao_android.view.TabView;
 
 public class MainActivity extends BaseListActivity {
 	private MenuHelper help;
-	private TimeTreeAdapter adapter;
-
-	@Override
-	protected void onCreate(Bundle arg0) {
-		// TODO Auto-generated method stub
-
-		super.onCreate(arg0);
-
-	}
+	private HomeListAdapter adapter;
+	private TabView tab;
 
 	@Override
 	protected void initData() {
@@ -30,8 +25,9 @@ public class MainActivity extends BaseListActivity {
 		// TODO Auto-generated method stub
 		setContentView(R.layout.activity_main);
 		super.initView();
-		adapter = new TimeTreeAdapter(this);
-		adapter.refresh(help.getTimeTreeModel().getList());
+		tab=new TabView(this);
+		adapter = new HomeListAdapter(this);
+		adapter.refresh(help.getHomeModel().getDataList());
 		listView.setAdapter(adapter);
 	}
 
@@ -45,6 +41,13 @@ public class MainActivity extends BaseListActivity {
 	protected String getTitleText() {
 		// TODO Auto-generated method stub
 		return getString(R.string.title_time_tree);
+	}
+
+	@Override
+	protected void clickItem(View view, int position, long id) {
+		Intent intent = new Intent(this, TabChangActivity.class);
+		intent.putExtra("tag", tab.getMyLegalCloudID() + "");
+		startActivity(intent);
 	}
 
 }

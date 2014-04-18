@@ -2,6 +2,9 @@
 <resources>
 
     <string name="title_time_tree">时间轴</string>
+    <string name="title_juben">剧本评估</string>
+    <string name="title_zhuchuang">主创评估</string>
+    <string name="title_xuanfan">宣发评估</string>
     <!-- 用户信息 -->
     <string name="use_information_name">姓名</string>
     <string name="use_information_hint_name">请输入用户姓名</string>

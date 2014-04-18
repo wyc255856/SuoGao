@@ -1,9 +1,13 @@
 package com.suogao.suogaoapp;
 
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+
 import com.suogao.suogao_android.view.HeadView;
 import com.suogao.suogao_android.widget.XListView;
-
-import android.os.Bundle;
 
 public abstract class BaseListActivity extends BaseFragmentActivity {
 	protected XListView listView;
@@ -25,7 +29,7 @@ public abstract class BaseListActivity extends BaseFragmentActivity {
 
 	protected void initView() {
 		// TODO Auto-generated method stub
-		
+
 		listView = (XListView) findViewById(R.id.listView);
 		listView.setPullLoadEnable(false);
 		listView.setPullRefreshEnable(false);
@@ -35,10 +39,20 @@ public abstract class BaseListActivity extends BaseFragmentActivity {
 	}
 
 	protected void initAction() {
-		// TODO Auto-generated method stub
 
+		listView.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				// TODO Auto-generated method stub
+				clickItem(view, position, id);
+			}
+		});
 	}
 
 	protected abstract String getTitleText();
+
+	protected abstract void clickItem(View view, int position, long id);
 
 }
