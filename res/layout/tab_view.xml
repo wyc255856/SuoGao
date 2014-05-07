@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <!-- <RadioButton /> -->
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/cook"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_home_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/title_juben" />
+
+        <RadioButton
+            android:id="@+id/life"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_legallector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/title_zhuchuang" />
+
+        <RadioButton
+            android:id="@+id/makeup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_product_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/title_xuanfan" />
+
+        <RadioButton
+            android:id="@+id/doctor"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_risk_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/title_time_tree" />
+    </RadioGroup>
+
+</LinearLayout>
